@@ -1,11 +1,18 @@
 {
-  "tasks": {
-    "fmt_lint": "deno fmt --check && deno lint",
-    "dev": "deno run --allow-net --allow-env src/server.ts"
-  },
-  "imports": {
-    "oak": "https://deno.land/x/oak@v16.1.0/mod.ts",
-    "OpenAI": "https://deno.land/x/openai@v4.52.3/mod.ts",
-    "std/dotenv": "https://deno.land/std@0.224.0/dotenv/load.ts"
-  }
+    "tasks": {
+        "lint": "deno lint",
+        "fmt": "deno fmt",
+        "dev": "deno run --allow-net --allow-env src/server.ts"
+    },
+    "imports": {
+        "oak": "https://deno.land/x/oak@v16.1.0/mod.ts",
+        "OpenAI": "https://deno.land/x/openai@v4.52.3/mod.ts",
+        "std/dotenv": "https://deno.land/std@0.224.0/dotenv/load.ts"
+    },
+    "fmt": {
+        "useTabs": false,
+        "semiColons": false,
+        "indentWidth": 4,
+        "singleQuote": false
+    }
 }
